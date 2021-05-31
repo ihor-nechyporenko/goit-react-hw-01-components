@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
+import styles from './DataItem.module.css';
 
 const DataItem = ({ label, percentage }) => (
-    <div>
-        <span class="label">{label}</span>
-        <span class="percentage">{percentage}%</span>
-    </div>    
+    <>
+        <span className={styles.label}>{label}</span>
+        <span className={styles.percentage}>{percentage}%</span>
+    </>    
 );
 
 DataItem.propTypes = {

@@ -1,12 +1,18 @@
-import DataItem from './Data';
+import DataItem from '../DataItem/DataItem';
 import PropTypes from 'prop-types';
+import styles from './Statistics.module.css';
+import colorGenerator from './color-generator';
 
 const Statistics = ({ title, stats }) => (
-    <section class="statistics">
-        {title && <h2 class="title">{title}</h2>}
-        <ul class="stat-list">
+    <section className={styles.statistics}>
+        {title && <h2 className={styles.title}>{title}</h2>}
+        <ul className={styles.stat__list}>
             {stats.map(({ id, label, percentage }) => (
-                <li class="item" key={id}>
+                <li className={styles.item}
+                    style={
+                        { backgroundColor: colorGenerator() }
+                    }
+                    key={id}>
                     <DataItem
                         label={label}
                         percentage={percentage}

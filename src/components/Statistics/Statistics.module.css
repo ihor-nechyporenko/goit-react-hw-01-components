@@ -1,0 +1,36 @@
+.statistics {
+  margin: 20px auto;
+  padding-top: 15px;
+  width: fit-content;
+
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  margin-bottom: 15px;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.stat__list {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  width: 70px;
+}
+
+.item:first-child {
+  border-bottom-left-radius: 5px;
+}
+
+.item:last-child {
+  border-right: none;
+  border-bottom-right-radius: 5px;
+}
