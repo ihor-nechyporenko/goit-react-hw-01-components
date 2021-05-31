@@ -1,5 +1,7 @@
+@value text-color, bg-color, bg-color-secondary, accent-color, shadow from '../../variables.module.css';
+
 .transaction {
-  margin: 20px auto;
+  margin: 30px auto;
   width: fit-content;
 }
 
@@ -7,54 +9,54 @@
   table-layout: fixed;
   border-collapse: collapse;
 
-  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: shadow;
 }
 
 tbody td {
   text-align: center;
-  color: #a0a0a0;
+  color: text-color;
 }
 
 @media screen and (max-width: 767px) {
   tbody td {
     text-align: center;
     font-size: 14px;
-    color: #a0a0a0;
+    color: text-color;
   }
 }
 
 tbody tr:nth-child(odd) {
-  background-color: #fff;
+  background-color: bg-color;
 }
 
 tbody tr:nth-child(even) {
-  background-color: rgb(234, 240, 248);
+  background-color: bg-color-secondary;
 }
 
 thead tr {
-  background-color: rgb(125, 218, 255);
+  background-color: accent-color;
 }
 
 thead th:not(:last-child) {
-  border-right: 1px solid #fff;
+  border-right: 1px solid bg-color;
 }
 
 @media screen and (max-width: 767px) {
   thead th {
     font-size: 16px;
-    color: #fff;
+    color: bg-color;
   }
 }
 
 @media screen and (min-width: 768px) {
   thead th {
     font-size: 20px;
-    color: #fff;
+    color: bg-color;
   }
 }
 
 tbody td {
-  border: 1px solid #a0a0a0;
+  border: 1px solid text-color;
 }
 
 th,

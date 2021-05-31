@@ -1,11 +1,13 @@
+@value bg-color, shadow from '../../variables.module.css';
+
 .statistics {
-  margin: 20px auto;
+  margin: 30px auto;
   padding-top: 15px;
   width: fit-content;
 
-  background-color: #fff;
+  background-color: bg-color;
   border-radius: 5px;
-  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: shadow;
 }
 
 .title {

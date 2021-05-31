@@ -1,10 +1,12 @@
+@value text-color, bg-color, bg-color-secondary, shadow from '../../variables.module.css';
+
 .profile {
-  margin: 20px auto;
+  margin: 30px auto;
   width: 270px;
 
-  background-color: #fff;
+  background-color: bg-color;
   border-radius: 5px;
-  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: shadow;
 }
 
 .description {
@@ -23,7 +25,7 @@
 
   border-top: solid #cfcfcf 1px;
   border-right: solid #cfcfcf 1px;
-  background-color: rgb(234, 240, 248);
+  background-color: bg-color-secondary;
 }
 
 .items:first-child {
@@ -40,7 +42,7 @@
   width: 120px;
   border-radius: 50%;
 
-  background-color: rgb(234, 240, 248);
+  background-color: bg-color-secondary;
 }
 
 .name {
@@ -51,12 +53,12 @@
 
 .tag {
   margin-bottom: 10px;
-  color: #a0a0a0;
+  color: text-color;
 }
 
 .location {
   margin-bottom: 20px;
-  color: #a0a0a0;
+  color: text-color;
 }
 
 .label {
@@ -65,7 +67,7 @@
   text-align: center;
 
   font-size: 14px;
-  color: #a0a0a0;
+  color: text-color;
 }
 
 .quantity {

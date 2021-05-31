@@ -1,3 +1,5 @@
+@value bg-color-secondary from '../../variables.module.css';
+
 .status {
   display: block;
   margin: 0 10px;
@@ -10,7 +12,7 @@
 .avatar {
   width: 70px;
 
-  background-color: rgb(234, 240, 248);
+  background-color: bg-color-secondary;
   border-radius: 5px;
 }
 

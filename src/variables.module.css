@@ -1,0 +1,5 @@
+@value text-color: #a0a0a0;
+@value bg-color: #fff;
+@value bg-color-secondary: rgb(234, 240, 248);
+@value accent-color: rgb(125, 218, 255);
+@value shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.5);
